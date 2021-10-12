@@ -70,12 +70,12 @@ clean: CMakeFiles\Lab02x.dir\clean
 CMakeFiles\Lab02x.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02x.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02x.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02x.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02x.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Piotr\CLionProjects\Lab02x\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Lab02x"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Piotr\CLionProjects\Lab02x\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target Lab02x"
 .PHONY : CMakeFiles\Lab02x.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\Lab02x.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Piotr\CLionProjects\Lab02x\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Piotr\CLionProjects\Lab02x\cmake-build-debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\Lab02x.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Piotr\CLionProjects\Lab02x\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles\Lab02x.dir\rule

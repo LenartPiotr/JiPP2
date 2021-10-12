@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Lab02x.dir/main.cpp.obj"
+  "CMakeFiles/Lab02x.dir/src/calc.cpp.obj"
+  "CMakeFiles/Lab02x.dir/src/main.cpp.obj"
   "Lab02x.exe"
   "Lab02x.exe.manifest"
   "Lab02x.lib"

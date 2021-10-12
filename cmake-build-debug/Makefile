@@ -118,29 +118,53 @@ Lab02x\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02x.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02x.dir\build
 .PHONY : Lab02x\fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+src\calc.obj: src\calc.cpp.obj
+.PHONY : src\calc.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02x.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02x.dir\main.cpp.obj
-.PHONY : main.cpp.obj
+src\calc.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02x.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02x.dir\src\calc.cpp.obj
+.PHONY : src\calc.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+src\calc.i: src\calc.cpp.i
+.PHONY : src\calc.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02x.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02x.dir\main.cpp.i
-.PHONY : main.cpp.i
+src\calc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02x.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02x.dir\src\calc.cpp.i
+.PHONY : src\calc.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src\calc.s: src\calc.cpp.s
+.PHONY : src\calc.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02x.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02x.dir\main.cpp.s
-.PHONY : main.cpp.s
+src\calc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02x.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02x.dir\src\calc.cpp.s
+.PHONY : src\calc.cpp.s
+
+src\main.obj: src\main.cpp.obj
+.PHONY : src\main.obj
+
+# target to build an object file
+src\main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02x.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02x.dir\src\main.cpp.obj
+.PHONY : src\main.cpp.obj
+
+src\main.i: src\main.cpp.i
+.PHONY : src\main.i
+
+# target to preprocess a source file
+src\main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02x.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02x.dir\src\main.cpp.i
+.PHONY : src\main.cpp.i
+
+src\main.s: src\main.cpp.s
+.PHONY : src\main.s
+
+# target to generate assembly for a file
+src\main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02x.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02x.dir\src\main.cpp.s
+.PHONY : src\main.cpp.s
 
 # Help Target
 help:
@@ -151,9 +175,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Lab02x
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... src/calc.obj
+	@echo ... src/calc.i
+	@echo ... src/calc.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
 .PHONY : help
 
 
