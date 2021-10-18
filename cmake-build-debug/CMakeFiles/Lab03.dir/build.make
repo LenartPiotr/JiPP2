@@ -74,17 +74,80 @@ CMakeFiles\Lab03.dir\main.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Lab03.dir\main.cpp.s /c C:\Users\Piotr\CLionProjects\Lab03\main.cpp
 <<
 
+CMakeFiles\Lab03.dir\src\PrzeciazanieFunkcji.cpp.obj: CMakeFiles\Lab03.dir\flags.make
+CMakeFiles\Lab03.dir\src\PrzeciazanieFunkcji.cpp.obj: ..\src\PrzeciazanieFunkcji.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Piotr\CLionProjects\Lab03\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lab03.dir/src/PrzeciazanieFunkcji.cpp.obj"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Lab03.dir\src\PrzeciazanieFunkcji.cpp.obj /FdCMakeFiles\Lab03.dir\ /FS -c C:\Users\Piotr\CLionProjects\Lab03\src\PrzeciazanieFunkcji.cpp
+<<
+
+CMakeFiles\Lab03.dir\src\PrzeciazanieFunkcji.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab03.dir/src/PrzeciazanieFunkcji.cpp.i"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe > CMakeFiles\Lab03.dir\src\PrzeciazanieFunkcji.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Piotr\CLionProjects\Lab03\src\PrzeciazanieFunkcji.cpp
+<<
+
+CMakeFiles\Lab03.dir\src\PrzeciazanieFunkcji.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab03.dir/src/PrzeciazanieFunkcji.cpp.s"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Lab03.dir\src\PrzeciazanieFunkcji.cpp.s /c C:\Users\Piotr\CLionProjects\Lab03\src\PrzeciazanieFunkcji.cpp
+<<
+
+CMakeFiles\Lab03.dir\src\Tablice.cpp.obj: CMakeFiles\Lab03.dir\flags.make
+CMakeFiles\Lab03.dir\src\Tablice.cpp.obj: ..\src\Tablice.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Piotr\CLionProjects\Lab03\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Lab03.dir/src/Tablice.cpp.obj"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Lab03.dir\src\Tablice.cpp.obj /FdCMakeFiles\Lab03.dir\ /FS -c C:\Users\Piotr\CLionProjects\Lab03\src\Tablice.cpp
+<<
+
+CMakeFiles\Lab03.dir\src\Tablice.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab03.dir/src/Tablice.cpp.i"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe > CMakeFiles\Lab03.dir\src\Tablice.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Piotr\CLionProjects\Lab03\src\Tablice.cpp
+<<
+
+CMakeFiles\Lab03.dir\src\Tablice.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab03.dir/src/Tablice.cpp.s"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Lab03.dir\src\Tablice.cpp.s /c C:\Users\Piotr\CLionProjects\Lab03\src\Tablice.cpp
+<<
+
+CMakeFiles\Lab03.dir\src\Wskazniki.cpp.obj: CMakeFiles\Lab03.dir\flags.make
+CMakeFiles\Lab03.dir\src\Wskazniki.cpp.obj: ..\src\Wskazniki.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Piotr\CLionProjects\Lab03\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Lab03.dir/src/Wskazniki.cpp.obj"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Lab03.dir\src\Wskazniki.cpp.obj /FdCMakeFiles\Lab03.dir\ /FS -c C:\Users\Piotr\CLionProjects\Lab03\src\Wskazniki.cpp
+<<
+
+CMakeFiles\Lab03.dir\src\Wskazniki.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab03.dir/src/Wskazniki.cpp.i"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe > CMakeFiles\Lab03.dir\src\Wskazniki.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Piotr\CLionProjects\Lab03\src\Wskazniki.cpp
+<<
+
+CMakeFiles\Lab03.dir\src\Wskazniki.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab03.dir/src/Wskazniki.cpp.s"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Lab03.dir\src\Wskazniki.cpp.s /c C:\Users\Piotr\CLionProjects\Lab03\src\Wskazniki.cpp
+<<
+
 # Object files for target Lab03
 Lab03_OBJECTS = \
-"CMakeFiles\Lab03.dir\main.cpp.obj"
+"CMakeFiles\Lab03.dir\main.cpp.obj" \
+"CMakeFiles\Lab03.dir\src\PrzeciazanieFunkcji.cpp.obj" \
+"CMakeFiles\Lab03.dir\src\Tablice.cpp.obj" \
+"CMakeFiles\Lab03.dir\src\Wskazniki.cpp.obj"
 
 # External object files for target Lab03
 Lab03_EXTERNAL_OBJECTS =
 
 Lab03.exe: CMakeFiles\Lab03.dir\main.cpp.obj
+Lab03.exe: CMakeFiles\Lab03.dir\src\PrzeciazanieFunkcji.cpp.obj
+Lab03.exe: CMakeFiles\Lab03.dir\src\Tablice.cpp.obj
+Lab03.exe: CMakeFiles\Lab03.dir\src\Wskazniki.cpp.obj
 Lab03.exe: CMakeFiles\Lab03.dir\build.make
 Lab03.exe: CMakeFiles\Lab03.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Piotr\CLionProjects\Lab03\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Lab03.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Piotr\CLionProjects\Lab03\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Lab03.exe"
 	"C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\Lab03.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\Lab03.dir\objects1.rsp @<<
  /out:Lab03.exe /implib:Lab03.lib /pdb:C:\Users\Piotr\CLionProjects\Lab03\cmake-build-debug\Lab03.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

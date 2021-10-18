@@ -142,6 +142,78 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab03.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab03.dir\main.cpp.s
 .PHONY : main.cpp.s
 
+src\PrzeciazanieFunkcji.obj: src\PrzeciazanieFunkcji.cpp.obj
+.PHONY : src\PrzeciazanieFunkcji.obj
+
+# target to build an object file
+src\PrzeciazanieFunkcji.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab03.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab03.dir\src\PrzeciazanieFunkcji.cpp.obj
+.PHONY : src\PrzeciazanieFunkcji.cpp.obj
+
+src\PrzeciazanieFunkcji.i: src\PrzeciazanieFunkcji.cpp.i
+.PHONY : src\PrzeciazanieFunkcji.i
+
+# target to preprocess a source file
+src\PrzeciazanieFunkcji.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab03.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab03.dir\src\PrzeciazanieFunkcji.cpp.i
+.PHONY : src\PrzeciazanieFunkcji.cpp.i
+
+src\PrzeciazanieFunkcji.s: src\PrzeciazanieFunkcji.cpp.s
+.PHONY : src\PrzeciazanieFunkcji.s
+
+# target to generate assembly for a file
+src\PrzeciazanieFunkcji.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab03.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab03.dir\src\PrzeciazanieFunkcji.cpp.s
+.PHONY : src\PrzeciazanieFunkcji.cpp.s
+
+src\Tablice.obj: src\Tablice.cpp.obj
+.PHONY : src\Tablice.obj
+
+# target to build an object file
+src\Tablice.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab03.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab03.dir\src\Tablice.cpp.obj
+.PHONY : src\Tablice.cpp.obj
+
+src\Tablice.i: src\Tablice.cpp.i
+.PHONY : src\Tablice.i
+
+# target to preprocess a source file
+src\Tablice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab03.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab03.dir\src\Tablice.cpp.i
+.PHONY : src\Tablice.cpp.i
+
+src\Tablice.s: src\Tablice.cpp.s
+.PHONY : src\Tablice.s
+
+# target to generate assembly for a file
+src\Tablice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab03.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab03.dir\src\Tablice.cpp.s
+.PHONY : src\Tablice.cpp.s
+
+src\Wskazniki.obj: src\Wskazniki.cpp.obj
+.PHONY : src\Wskazniki.obj
+
+# target to build an object file
+src\Wskazniki.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab03.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab03.dir\src\Wskazniki.cpp.obj
+.PHONY : src\Wskazniki.cpp.obj
+
+src\Wskazniki.i: src\Wskazniki.cpp.i
+.PHONY : src\Wskazniki.i
+
+# target to preprocess a source file
+src\Wskazniki.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab03.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab03.dir\src\Wskazniki.cpp.i
+.PHONY : src\Wskazniki.cpp.i
+
+src\Wskazniki.s: src\Wskazniki.cpp.s
+.PHONY : src\Wskazniki.s
+
+# target to generate assembly for a file
+src\Wskazniki.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab03.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab03.dir\src\Wskazniki.cpp.s
+.PHONY : src\Wskazniki.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -154,6 +226,15 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/PrzeciazanieFunkcji.obj
+	@echo ... src/PrzeciazanieFunkcji.i
+	@echo ... src/PrzeciazanieFunkcji.s
+	@echo ... src/Tablice.obj
+	@echo ... src/Tablice.i
+	@echo ... src/Tablice.s
+	@echo ... src/Wskazniki.obj
+	@echo ... src/Wskazniki.i
+	@echo ... src/Wskazniki.s
 .PHONY : help
 
 
