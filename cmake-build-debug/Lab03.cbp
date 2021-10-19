@@ -90,6 +90,9 @@
 		<Unit filename="C:/Users/Piotr/CLionProjects/Lab03/main.cpp">
 			<Option target="Lab03"/>
 		</Unit>
+		<Unit filename="C:/Users/Piotr/CLionProjects/Lab03/src/Bledy.cpp">
+			<Option target="Lab03"/>
+		</Unit>
 		<Unit filename="C:/Users/Piotr/CLionProjects/Lab03/src/PrzeciazanieFunkcji.cpp">
 			<Option target="Lab03"/>
 		</Unit>

@@ -142,6 +142,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab03.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab03.dir\main.cpp.s
 .PHONY : main.cpp.s
 
+src\Bledy.obj: src\Bledy.cpp.obj
+.PHONY : src\Bledy.obj
+
+# target to build an object file
+src\Bledy.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab03.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab03.dir\src\Bledy.cpp.obj
+.PHONY : src\Bledy.cpp.obj
+
+src\Bledy.i: src\Bledy.cpp.i
+.PHONY : src\Bledy.i
+
+# target to preprocess a source file
+src\Bledy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab03.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab03.dir\src\Bledy.cpp.i
+.PHONY : src\Bledy.cpp.i
+
+src\Bledy.s: src\Bledy.cpp.s
+.PHONY : src\Bledy.s
+
+# target to generate assembly for a file
+src\Bledy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab03.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab03.dir\src\Bledy.cpp.s
+.PHONY : src\Bledy.cpp.s
+
 src\PrzeciazanieFunkcji.obj: src\PrzeciazanieFunkcji.cpp.obj
 .PHONY : src\PrzeciazanieFunkcji.obj
 
@@ -226,6 +250,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/Bledy.obj
+	@echo ... src/Bledy.i
+	@echo ... src/Bledy.s
 	@echo ... src/PrzeciazanieFunkcji.obj
 	@echo ... src/PrzeciazanieFunkcji.i
 	@echo ... src/PrzeciazanieFunkcji.s

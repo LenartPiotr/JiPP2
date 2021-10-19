@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Lab03.dir/main.cpp.obj"
+  "CMakeFiles/Lab03.dir/src/Bledy.cpp.obj"
   "CMakeFiles/Lab03.dir/src/PrzeciazanieFunkcji.cpp.obj"
   "CMakeFiles/Lab03.dir/src/Tablice.cpp.obj"
   "CMakeFiles/Lab03.dir/src/Wskazniki.cpp.obj"

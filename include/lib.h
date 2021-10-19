@@ -8,5 +8,6 @@
 void PrzeciazanieFunkcji();
 void Tablice();
 void Wskazniki();
+void Bledy();
 
 #endif //LAB03_LIB_H

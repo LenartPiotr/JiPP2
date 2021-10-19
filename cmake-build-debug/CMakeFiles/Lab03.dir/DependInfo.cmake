@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Piotr/CLionProjects/Lab03/main.cpp" "C:/Users/Piotr/CLionProjects/Lab03/cmake-build-debug/CMakeFiles/Lab03.dir/main.cpp.obj"
+  "C:/Users/Piotr/CLionProjects/Lab03/src/Bledy.cpp" "C:/Users/Piotr/CLionProjects/Lab03/cmake-build-debug/CMakeFiles/Lab03.dir/src/Bledy.cpp.obj"
   "C:/Users/Piotr/CLionProjects/Lab03/src/PrzeciazanieFunkcji.cpp" "C:/Users/Piotr/CLionProjects/Lab03/cmake-build-debug/CMakeFiles/Lab03.dir/src/PrzeciazanieFunkcji.cpp.obj"
   "C:/Users/Piotr/CLionProjects/Lab03/src/Tablice.cpp" "C:/Users/Piotr/CLionProjects/Lab03/cmake-build-debug/CMakeFiles/Lab03.dir/src/Tablice.cpp.obj"
   "C:/Users/Piotr/CLionProjects/Lab03/src/Wskazniki.cpp" "C:/Users/Piotr/CLionProjects/Lab03/cmake-build-debug/CMakeFiles/Lab03.dir/src/Wskazniki.cpp.obj"

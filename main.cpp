@@ -13,5 +13,7 @@ int main() {
     Tablice();
     cout<<"\nWskazniki\n\n";
     Wskazniki();
+    cout<<"\nBledy\n\n";
+    Bledy();
     return 0;
 }
