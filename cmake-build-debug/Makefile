@@ -118,29 +118,53 @@ Lab02_Projekt\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02_Projekt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02_Projekt.dir\build
 .PHONY : Lab02_Projekt\fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+matrixApp\main.obj: matrixApp\main.cpp.obj
+.PHONY : matrixApp\main.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02_Projekt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02_Projekt.dir\main.cpp.obj
-.PHONY : main.cpp.obj
+matrixApp\main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02_Projekt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02_Projekt.dir\matrixApp\main.cpp.obj
+.PHONY : matrixApp\main.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+matrixApp\main.i: matrixApp\main.cpp.i
+.PHONY : matrixApp\main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02_Projekt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02_Projekt.dir\main.cpp.i
-.PHONY : main.cpp.i
+matrixApp\main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02_Projekt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02_Projekt.dir\matrixApp\main.cpp.i
+.PHONY : matrixApp\main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+matrixApp\main.s: matrixApp\main.cpp.s
+.PHONY : matrixApp\main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02_Projekt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02_Projekt.dir\main.cpp.s
-.PHONY : main.cpp.s
+matrixApp\main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02_Projekt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02_Projekt.dir\matrixApp\main.cpp.s
+.PHONY : matrixApp\main.cpp.s
+
+matrixLib\matrixLib.obj: matrixLib\matrixLib.cpp.obj
+.PHONY : matrixLib\matrixLib.obj
+
+# target to build an object file
+matrixLib\matrixLib.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02_Projekt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02_Projekt.dir\matrixLib\matrixLib.cpp.obj
+.PHONY : matrixLib\matrixLib.cpp.obj
+
+matrixLib\matrixLib.i: matrixLib\matrixLib.cpp.i
+.PHONY : matrixLib\matrixLib.i
+
+# target to preprocess a source file
+matrixLib\matrixLib.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02_Projekt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02_Projekt.dir\matrixLib\matrixLib.cpp.i
+.PHONY : matrixLib\matrixLib.cpp.i
+
+matrixLib\matrixLib.s: matrixLib\matrixLib.cpp.s
+.PHONY : matrixLib\matrixLib.s
+
+# target to generate assembly for a file
+matrixLib\matrixLib.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02_Projekt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02_Projekt.dir\matrixLib\matrixLib.cpp.s
+.PHONY : matrixLib\matrixLib.cpp.s
 
 # Help Target
 help:
@@ -151,9 +175,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Lab02_Projekt
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... matrixApp/main.obj
+	@echo ... matrixApp/main.i
+	@echo ... matrixApp/main.s
+	@echo ... matrixLib/matrixLib.obj
+	@echo ... matrixLib/matrixLib.i
+	@echo ... matrixLib/matrixLib.s
 .PHONY : help
 
 

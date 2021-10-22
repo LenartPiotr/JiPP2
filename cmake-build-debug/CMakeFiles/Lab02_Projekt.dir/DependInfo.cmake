@@ -8,12 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Piotr/CLionProjects/Lab02-Projekt/main.cpp" "C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug/CMakeFiles/Lab02_Projekt.dir/main.cpp.obj"
+  "C:/Users/Piotr/CLionProjects/Lab02-Projekt/matrixApp/main.cpp" "C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug/CMakeFiles/Lab02_Projekt.dir/matrixApp/main.cpp.obj"
+  "C:/Users/Piotr/CLionProjects/Lab02-Projekt/matrixLib/matrixLib.cpp" "C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug/CMakeFiles/Lab02_Projekt.dir/matrixLib/matrixLib.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../include"
   )
 
 # The set of dependency files which are needed:
