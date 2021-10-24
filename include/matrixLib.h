@@ -20,7 +20,7 @@ void DeleteMatrix(double**,int);
 double** addMatrix(double**,double**,int,int);
 double** subtractMatrix(double**,double**,int,int);
 double** multiplyMatrix(double**,double**,int,int,int);
-double** multiplyByScalar(double**,int,int,int);
+double** multiplyByScalar(double**,int,int,double);
 double** transpozeMatrix(double**,int,int);
 double** powerMatrix(double**,int,unsigned int);
 double determinantMatrix(double**,int);
