@@ -19,6 +19,12 @@ public:
     double objetosc() const {
         return 4/3.*M_PI*r*r*r;
     }
+    double getR(){
+        return r;
+    }
+    void setR(double value){
+        r = value;
+    }
 };
 
 class FunckjaKwadratowa{
@@ -79,6 +85,7 @@ void Klasy(){
     func.draw();
     int liczbaStudentow;
     Student* studenci = WczytajStudenow(liczbaStudentow);
-    LiczIloscPoprawnychOdpowiedzi(studenci, liczbaStudentow);
+    if(liczbaStudentow != 0)
+        LiczIloscPoprawnychOdpowiedzi(studenci, liczbaStudentow);
     delete[] studenci;
 }
