@@ -3,6 +3,5 @@ project(Lab02_Projekt)
 
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories(include)
-
-add_executable(Lab02_Projekt matrixApp/main.cpp matrixLib/matrixLib.cpp)
+add_subdirectory(matrixLib)
+add_subdirectory(matrixApp)

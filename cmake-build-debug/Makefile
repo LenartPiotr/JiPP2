@@ -106,65 +106,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Lab02_Projekt
+# Target rules for targets named matrixLib
 
 # Build rule for target.
-Lab02_Projekt: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Lab02_Projekt
-.PHONY : Lab02_Projekt
+matrixLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) matrixLib
+.PHONY : matrixLib
 
 # fast build rule for target.
-Lab02_Projekt\fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02_Projekt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02_Projekt.dir\build
-.PHONY : Lab02_Projekt\fast
+matrixLib\fast:
+	$(MAKE) $(MAKESILENT) -f matrixLib\CMakeFiles\matrixLib.dir\build.make /nologo -$(MAKEFLAGS) matrixLib\CMakeFiles\matrixLib.dir\build
+.PHONY : matrixLib\fast
 
-matrixApp\main.obj: matrixApp\main.cpp.obj
-.PHONY : matrixApp\main.obj
+#=============================================================================
+# Target rules for targets named Lab02-Projekt
 
-# target to build an object file
-matrixApp\main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02_Projekt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02_Projekt.dir\matrixApp\main.cpp.obj
-.PHONY : matrixApp\main.cpp.obj
+# Build rule for target.
+Lab02-Projekt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Lab02-Projekt
+.PHONY : Lab02-Projekt
 
-matrixApp\main.i: matrixApp\main.cpp.i
-.PHONY : matrixApp\main.i
-
-# target to preprocess a source file
-matrixApp\main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02_Projekt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02_Projekt.dir\matrixApp\main.cpp.i
-.PHONY : matrixApp\main.cpp.i
-
-matrixApp\main.s: matrixApp\main.cpp.s
-.PHONY : matrixApp\main.s
-
-# target to generate assembly for a file
-matrixApp\main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02_Projekt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02_Projekt.dir\matrixApp\main.cpp.s
-.PHONY : matrixApp\main.cpp.s
-
-matrixLib\matrixLib.obj: matrixLib\matrixLib.cpp.obj
-.PHONY : matrixLib\matrixLib.obj
-
-# target to build an object file
-matrixLib\matrixLib.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02_Projekt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02_Projekt.dir\matrixLib\matrixLib.cpp.obj
-.PHONY : matrixLib\matrixLib.cpp.obj
-
-matrixLib\matrixLib.i: matrixLib\matrixLib.cpp.i
-.PHONY : matrixLib\matrixLib.i
-
-# target to preprocess a source file
-matrixLib\matrixLib.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02_Projekt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02_Projekt.dir\matrixLib\matrixLib.cpp.i
-.PHONY : matrixLib\matrixLib.cpp.i
-
-matrixLib\matrixLib.s: matrixLib\matrixLib.cpp.s
-.PHONY : matrixLib\matrixLib.s
-
-# target to generate assembly for a file
-matrixLib\matrixLib.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02_Projekt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02_Projekt.dir\matrixLib\matrixLib.cpp.s
-.PHONY : matrixLib\matrixLib.cpp.s
+# fast build rule for target.
+Lab02-Projekt\fast:
+	$(MAKE) $(MAKESILENT) -f matrixApp\CMakeFiles\Lab02-Projekt.dir\build.make /nologo -$(MAKEFLAGS) matrixApp\CMakeFiles\Lab02-Projekt.dir\build
+.PHONY : Lab02-Projekt\fast
 
 # Help Target
 help:
@@ -174,13 +139,8 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Lab02_Projekt
-	@echo ... matrixApp/main.obj
-	@echo ... matrixApp/main.i
-	@echo ... matrixApp/main.s
-	@echo ... matrixLib/matrixLib.obj
-	@echo ... matrixLib/matrixLib.i
-	@echo ... matrixLib/matrixLib.s
+	@echo ... Lab02-Projekt
+	@echo ... matrixLib
 .PHONY : help
 
 

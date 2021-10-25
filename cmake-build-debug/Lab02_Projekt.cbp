@@ -5,59 +5,13 @@
 		<Option title="Lab02_Projekt"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="msvc8"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\matrixLib\;CMake Files\matrixApp\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\Makefile VERBOSE=1 all"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Lab02_Projekt">
-				<Option output="C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug/Lab02_Projekt.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="msvc8"/>
-				<Compiler>
-					<Add directory="C:/Users/Piotr/CLionProjects/Lab02-Projekt/include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\Makefile VERBOSE=1 Lab02_Projekt"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Lab02_Projekt/fast">
-				<Option output="C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug/Lab02_Projekt.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="msvc8"/>
-				<Compiler>
-					<Add directory="C:/Users/Piotr/CLionProjects/Lab02-Projekt/include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\Makefile VERBOSE=1 Lab02_Projekt/fast"/>
 					<CompileFile command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 					<DistClean command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\Makefile VERBOSE=1 clean"/>
@@ -83,15 +37,116 @@
 					<DistClean command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="matrixLib">
+				<Option output="C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug/matrixLib/matrixLib.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug/matrixLib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Users/Piotr/CLionProjects/Lab02-Projekt/matrixLib/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\matrixLib\Makefile VERBOSE=1 matrixLib"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\matrixLib\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\matrixLib\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\matrixLib\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="matrixLib/fast">
+				<Option output="C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug/matrixLib/matrixLib.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug/matrixLib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Users/Piotr/CLionProjects/Lab02-Projekt/matrixLib/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\matrixLib\Makefile VERBOSE=1 matrixLib/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\matrixLib\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\matrixLib\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\matrixLib\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Lab02-Projekt">
+				<Option output="C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug/matrixApp/Lab02-Projekt.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug/matrixApp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Users/Piotr/CLionProjects/Lab02-Projekt/matrixLib/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\matrixApp\Makefile VERBOSE=1 Lab02-Projekt"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\matrixApp\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\matrixApp\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\matrixApp\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Lab02-Projekt/fast">
+				<Option output="C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug/matrixApp/Lab02-Projekt.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug/matrixApp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Users/Piotr/CLionProjects/Lab02-Projekt/matrixLib/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\matrixApp\Makefile VERBOSE=1 Lab02-Projekt/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\matrixApp\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\matrixApp\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\matrixApp\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
-		<Unit filename="C:/Users/Piotr/CLionProjects/Lab02-Projekt/matrixApp/main.cpp">
-			<Option target="Lab02_Projekt"/>
+		<Unit filename="C:/Users/Piotr/CLionProjects/Lab02-Projekt/matrixApp/src/main.cpp">
+			<Option target="Lab02-Projekt"/>
 		</Unit>
-		<Unit filename="C:/Users/Piotr/CLionProjects/Lab02-Projekt/matrixLib/matrixLib.cpp">
-			<Option target="Lab02_Projekt"/>
+		<Unit filename="C:/Users/Piotr/CLionProjects/Lab02-Projekt/matrixLib/include/matrixLib.h">
+			<Option target="matrixLib"/>
+		</Unit>
+		<Unit filename="C:/Users/Piotr/CLionProjects/Lab02-Projekt/matrixLib/src/matrixLib.cpp">
+			<Option target="matrixLib"/>
 		</Unit>
 		<Unit filename="C:/Users/Piotr/CLionProjects/Lab02-Projekt/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/Piotr/CLionProjects/Lab02-Projekt/matrixLib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\matrixLib\"/>
+		</Unit>
+		<Unit filename="C:/Users/Piotr/CLionProjects/Lab02-Projekt/matrixApp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\matrixApp\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

@@ -267,6 +267,8 @@ int main(int argc, char *argv[]) {
             ShowMatrix(result, rows, cols);
             DeleteMatrix(matrixA, rows);
         }
+    }else{
+        Help();
     }
     return 0;
 }

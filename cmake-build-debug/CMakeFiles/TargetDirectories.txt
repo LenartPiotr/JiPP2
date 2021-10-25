@@ -1,3 +1,8 @@
-C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug/CMakeFiles/Lab02_Projekt.dir
 C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug/matrixLib/CMakeFiles/matrixLib.dir
+C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug/matrixLib/CMakeFiles/edit_cache.dir
+C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug/matrixLib/CMakeFiles/rebuild_cache.dir
+C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug/matrixApp/CMakeFiles/Lab02-Projekt.dir
+C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug/matrixApp/CMakeFiles/edit_cache.dir
+C:/Users/Piotr/CLionProjects/Lab02-Projekt/cmake-build-debug/matrixApp/CMakeFiles/rebuild_cache.dir

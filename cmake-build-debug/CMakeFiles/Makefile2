@@ -52,42 +52,101 @@ CMAKE_BINARY_DIR = C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles\Lab02_Projekt.dir\all
+all: matrixLib\all
+all: matrixApp\all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: matrixLib\preinstall
+preinstall: matrixApp\preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles\Lab02_Projekt.dir\clean
+clean: matrixLib\clean
+clean: matrixApp\clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Lab02_Projekt.dir
+# Directory level rules for directory matrixApp
+
+# Recursive "all" directory target.
+matrixApp\all: matrixApp\CMakeFiles\Lab02-Projekt.dir\all
+.PHONY : matrixApp\all
+
+# Recursive "preinstall" directory target.
+matrixApp\preinstall:
+.PHONY : matrixApp\preinstall
+
+# Recursive "clean" directory target.
+matrixApp\clean: matrixApp\CMakeFiles\Lab02-Projekt.dir\clean
+.PHONY : matrixApp\clean
+
+#=============================================================================
+# Directory level rules for directory matrixLib
+
+# Recursive "all" directory target.
+matrixLib\all: matrixLib\CMakeFiles\matrixLib.dir\all
+.PHONY : matrixLib\all
+
+# Recursive "preinstall" directory target.
+matrixLib\preinstall:
+.PHONY : matrixLib\preinstall
+
+# Recursive "clean" directory target.
+matrixLib\clean: matrixLib\CMakeFiles\matrixLib.dir\clean
+.PHONY : matrixLib\clean
+
+#=============================================================================
+# Target rules for target matrixLib/CMakeFiles/matrixLib.dir
 
 # All Build rule for target.
-CMakeFiles\Lab02_Projekt.dir\all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02_Projekt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02_Projekt.dir\depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02_Projekt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02_Projekt.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target Lab02_Projekt"
-.PHONY : CMakeFiles\Lab02_Projekt.dir\all
+matrixLib\CMakeFiles\matrixLib.dir\all:
+	$(MAKE) $(MAKESILENT) -f matrixLib\CMakeFiles\matrixLib.dir\build.make /nologo -$(MAKEFLAGS) matrixLib\CMakeFiles\matrixLib.dir\depend
+	$(MAKE) $(MAKESILENT) -f matrixLib\CMakeFiles\matrixLib.dir\build.make /nologo -$(MAKEFLAGS) matrixLib\CMakeFiles\matrixLib.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target matrixLib"
+.PHONY : matrixLib\CMakeFiles\matrixLib.dir\all
 
 # Build rule for subdir invocation for target.
-CMakeFiles\Lab02_Projekt.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\Lab02_Projekt.dir\all
+matrixLib\CMakeFiles\matrixLib.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) matrixLib\CMakeFiles\matrixLib.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles\Lab02_Projekt.dir\rule
+.PHONY : matrixLib\CMakeFiles\matrixLib.dir\rule
 
 # Convenience name for target.
-Lab02_Projekt: CMakeFiles\Lab02_Projekt.dir\rule
-.PHONY : Lab02_Projekt
+matrixLib: matrixLib\CMakeFiles\matrixLib.dir\rule
+.PHONY : matrixLib
 
 # clean rule for target.
-CMakeFiles\Lab02_Projekt.dir\clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab02_Projekt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab02_Projekt.dir\clean
-.PHONY : CMakeFiles\Lab02_Projekt.dir\clean
+matrixLib\CMakeFiles\matrixLib.dir\clean:
+	$(MAKE) $(MAKESILENT) -f matrixLib\CMakeFiles\matrixLib.dir\build.make /nologo -$(MAKEFLAGS) matrixLib\CMakeFiles\matrixLib.dir\clean
+.PHONY : matrixLib\CMakeFiles\matrixLib.dir\clean
+
+#=============================================================================
+# Target rules for target matrixApp/CMakeFiles/Lab02-Projekt.dir
+
+# All Build rule for target.
+matrixApp\CMakeFiles\Lab02-Projekt.dir\all: matrixLib\CMakeFiles\matrixLib.dir\all
+	$(MAKE) $(MAKESILENT) -f matrixApp\CMakeFiles\Lab02-Projekt.dir\build.make /nologo -$(MAKEFLAGS) matrixApp\CMakeFiles\Lab02-Projekt.dir\depend
+	$(MAKE) $(MAKESILENT) -f matrixApp\CMakeFiles\Lab02-Projekt.dir\build.make /nologo -$(MAKEFLAGS) matrixApp\CMakeFiles\Lab02-Projekt.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Lab02-Projekt"
+.PHONY : matrixApp\CMakeFiles\Lab02-Projekt.dir\all
+
+# Build rule for subdir invocation for target.
+matrixApp\CMakeFiles\Lab02-Projekt.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) matrixApp\CMakeFiles\Lab02-Projekt.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Piotr\CLionProjects\Lab02-Projekt\cmake-build-debug\CMakeFiles 0
+.PHONY : matrixApp\CMakeFiles\Lab02-Projekt.dir\rule
+
+# Convenience name for target.
+Lab02-Projekt: matrixApp\CMakeFiles\Lab02-Projekt.dir\rule
+.PHONY : Lab02-Projekt
+
+# clean rule for target.
+matrixApp\CMakeFiles\Lab02-Projekt.dir\clean:
+	$(MAKE) $(MAKESILENT) -f matrixApp\CMakeFiles\Lab02-Projekt.dir\build.make /nologo -$(MAKEFLAGS) matrixApp\CMakeFiles\Lab02-Projekt.dir\clean
+.PHONY : matrixApp\CMakeFiles\Lab02-Projekt.dir\clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
