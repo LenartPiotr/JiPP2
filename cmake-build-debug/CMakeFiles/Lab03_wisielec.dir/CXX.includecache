@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Piotr/CLionProjects/Lab03-wisielec/main.cpp
+iostream
+-
+time.h
+-
+thread
+-
+chrono
+-
+
