@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/Piotr/CLionProjects/Lab04/src/destruktory.cpp" "C:/Users/Piotr/CLionProjects/Lab04/cmake-build-debug/CMakeFiles/Lab04.dir/src/destruktory.cpp.obj"
   "C:/Users/Piotr/CLionProjects/Lab04/src/klasy.cpp" "C:/Users/Piotr/CLionProjects/Lab04/cmake-build-debug/CMakeFiles/Lab04.dir/src/klasy.cpp.obj"
+  "C:/Users/Piotr/CLionProjects/Lab04/src/konstruktory.cpp" "C:/Users/Piotr/CLionProjects/Lab04/cmake-build-debug/CMakeFiles/Lab04.dir/src/konstruktory.cpp.obj"
   "C:/Users/Piotr/CLionProjects/Lab04/src/main.cpp" "C:/Users/Piotr/CLionProjects/Lab04/cmake-build-debug/CMakeFiles/Lab04.dir/src/main.cpp.obj"
   "C:/Users/Piotr/CLionProjects/Lab04/src/struktury.cpp" "C:/Users/Piotr/CLionProjects/Lab04/cmake-build-debug/CMakeFiles/Lab04.dir/src/struktury.cpp.obj"
   )

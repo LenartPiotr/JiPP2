@@ -8,5 +8,9 @@ int main() {
     Struktury();
     cout<<"\n\t** Klasy **\n\n";
     Klasy();
+    cout<<"\n\t** Konstruktory **\n\n";
+    Konstruktory();
+    cout<<"\n\t** Destruktory **\n\n";
+    Destruktory();
     return 0;
 }

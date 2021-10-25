@@ -118,6 +118,30 @@ Lab04\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab04.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab04.dir\build
 .PHONY : Lab04\fast
 
+src\destruktory.obj: src\destruktory.cpp.obj
+.PHONY : src\destruktory.obj
+
+# target to build an object file
+src\destruktory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab04.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab04.dir\src\destruktory.cpp.obj
+.PHONY : src\destruktory.cpp.obj
+
+src\destruktory.i: src\destruktory.cpp.i
+.PHONY : src\destruktory.i
+
+# target to preprocess a source file
+src\destruktory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab04.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab04.dir\src\destruktory.cpp.i
+.PHONY : src\destruktory.cpp.i
+
+src\destruktory.s: src\destruktory.cpp.s
+.PHONY : src\destruktory.s
+
+# target to generate assembly for a file
+src\destruktory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab04.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab04.dir\src\destruktory.cpp.s
+.PHONY : src\destruktory.cpp.s
+
 src\klasy.obj: src\klasy.cpp.obj
 .PHONY : src\klasy.obj
 
@@ -141,6 +165,30 @@ src\klasy.s: src\klasy.cpp.s
 src\klasy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab04.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab04.dir\src\klasy.cpp.s
 .PHONY : src\klasy.cpp.s
+
+src\konstruktory.obj: src\konstruktory.cpp.obj
+.PHONY : src\konstruktory.obj
+
+# target to build an object file
+src\konstruktory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab04.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab04.dir\src\konstruktory.cpp.obj
+.PHONY : src\konstruktory.cpp.obj
+
+src\konstruktory.i: src\konstruktory.cpp.i
+.PHONY : src\konstruktory.i
+
+# target to preprocess a source file
+src\konstruktory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab04.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab04.dir\src\konstruktory.cpp.i
+.PHONY : src\konstruktory.cpp.i
+
+src\konstruktory.s: src\konstruktory.cpp.s
+.PHONY : src\konstruktory.s
+
+# target to generate assembly for a file
+src\konstruktory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab04.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab04.dir\src\konstruktory.cpp.s
+.PHONY : src\konstruktory.cpp.s
 
 src\main.obj: src\main.cpp.obj
 .PHONY : src\main.obj
@@ -199,9 +247,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Lab04
+	@echo ... src/destruktory.obj
+	@echo ... src/destruktory.i
+	@echo ... src/destruktory.s
 	@echo ... src/klasy.obj
 	@echo ... src/klasy.i
 	@echo ... src/klasy.s
+	@echo ... src/konstruktory.obj
+	@echo ... src/konstruktory.i
+	@echo ... src/konstruktory.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

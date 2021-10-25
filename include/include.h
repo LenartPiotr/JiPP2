@@ -3,5 +3,7 @@
 
 void Struktury();
 void Klasy();
+void Konstruktory();
+void Destruktory();
 
 #endif //LAB04_INCLUDE_H
