@@ -118,6 +118,30 @@ Lab04\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab04.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab04.dir\build
 .PHONY : Lab04\fast
 
+src\klasy.obj: src\klasy.cpp.obj
+.PHONY : src\klasy.obj
+
+# target to build an object file
+src\klasy.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab04.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab04.dir\src\klasy.cpp.obj
+.PHONY : src\klasy.cpp.obj
+
+src\klasy.i: src\klasy.cpp.i
+.PHONY : src\klasy.i
+
+# target to preprocess a source file
+src\klasy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab04.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab04.dir\src\klasy.cpp.i
+.PHONY : src\klasy.cpp.i
+
+src\klasy.s: src\klasy.cpp.s
+.PHONY : src\klasy.s
+
+# target to generate assembly for a file
+src\klasy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab04.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab04.dir\src\klasy.cpp.s
+.PHONY : src\klasy.cpp.s
+
 src\main.obj: src\main.cpp.obj
 .PHONY : src\main.obj
 
@@ -175,6 +199,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Lab04
+	@echo ... src/klasy.obj
+	@echo ... src/klasy.i
+	@echo ... src/klasy.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

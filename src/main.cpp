@@ -4,7 +4,9 @@
 using namespace std;
 
 int main() {
-    cout<<"\tStruktury\n\n";
+    cout<<"\n\t** Struktury **\n\n";
     Struktury();
+    cout<<"\n\t** Klasy **\n\n";
+    Klasy();
     return 0;
 }
