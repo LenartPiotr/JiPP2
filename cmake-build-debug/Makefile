@@ -118,29 +118,53 @@ Lab04\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab04.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab04.dir\build
 .PHONY : Lab04\fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+src\main.obj: src\main.cpp.obj
+.PHONY : src\main.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab04.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab04.dir\main.cpp.obj
-.PHONY : main.cpp.obj
+src\main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab04.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab04.dir\src\main.cpp.obj
+.PHONY : src\main.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+src\main.i: src\main.cpp.i
+.PHONY : src\main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab04.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab04.dir\main.cpp.i
-.PHONY : main.cpp.i
+src\main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab04.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab04.dir\src\main.cpp.i
+.PHONY : src\main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src\main.s: src\main.cpp.s
+.PHONY : src\main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab04.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab04.dir\main.cpp.s
-.PHONY : main.cpp.s
+src\main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab04.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab04.dir\src\main.cpp.s
+.PHONY : src\main.cpp.s
+
+src\struktury.obj: src\struktury.cpp.obj
+.PHONY : src\struktury.obj
+
+# target to build an object file
+src\struktury.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab04.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab04.dir\src\struktury.cpp.obj
+.PHONY : src\struktury.cpp.obj
+
+src\struktury.i: src\struktury.cpp.i
+.PHONY : src\struktury.i
+
+# target to preprocess a source file
+src\struktury.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab04.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab04.dir\src\struktury.cpp.i
+.PHONY : src\struktury.cpp.i
+
+src\struktury.s: src\struktury.cpp.s
+.PHONY : src\struktury.s
+
+# target to generate assembly for a file
+src\struktury.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab04.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab04.dir\src\struktury.cpp.s
+.PHONY : src\struktury.cpp.s
 
 # Help Target
 help:
@@ -151,9 +175,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Lab04
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
+	@echo ... src/struktury.obj
+	@echo ... src/struktury.i
+	@echo ... src/struktury.s
 .PHONY : help
 
 

@@ -3,4 +3,6 @@ project(Lab04)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Lab04 main.cpp)
+include_directories(${CMAKE_SOURCE_DIR}/include)
+
+add_executable(Lab04 src/main.cpp src/struktury.cpp)

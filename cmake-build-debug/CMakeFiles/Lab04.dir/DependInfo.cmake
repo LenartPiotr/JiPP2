@@ -8,12 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Piotr/CLionProjects/Lab04/main.cpp" "C:/Users/Piotr/CLionProjects/Lab04/cmake-build-debug/CMakeFiles/Lab04.dir/main.cpp.obj"
+  "C:/Users/Piotr/CLionProjects/Lab04/src/main.cpp" "C:/Users/Piotr/CLionProjects/Lab04/cmake-build-debug/CMakeFiles/Lab04.dir/src/main.cpp.obj"
+  "C:/Users/Piotr/CLionProjects/Lab04/src/struktury.cpp" "C:/Users/Piotr/CLionProjects/Lab04/cmake-build-debug/CMakeFiles/Lab04.dir/src/struktury.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../include"
   )
 
 # The set of dependency files which are needed:

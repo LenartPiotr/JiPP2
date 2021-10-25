@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Lab04.dir/main.cpp.obj"
+  "CMakeFiles/Lab04.dir/src/main.cpp.obj"
+  "CMakeFiles/Lab04.dir/src/struktury.cpp.obj"
   "Lab04.exe"
   "Lab04.exe.manifest"
   "Lab04.lib"
