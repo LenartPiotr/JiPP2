@@ -119,17 +119,17 @@ matrixLib\fast:
 .PHONY : matrixLib\fast
 
 #=============================================================================
-# Target rules for targets named Lab02-Projekt
+# Target rules for targets named matrixApp
 
 # Build rule for target.
-Lab02-Projekt: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Lab02-Projekt
-.PHONY : Lab02-Projekt
+matrixApp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) matrixApp
+.PHONY : matrixApp
 
 # fast build rule for target.
-Lab02-Projekt\fast:
-	$(MAKE) $(MAKESILENT) -f matrixApp\CMakeFiles\Lab02-Projekt.dir\build.make /nologo -$(MAKEFLAGS) matrixApp\CMakeFiles\Lab02-Projekt.dir\build
-.PHONY : Lab02-Projekt\fast
+matrixApp\fast:
+	$(MAKE) $(MAKESILENT) -f matrixApp\CMakeFiles\matrixApp.dir\build.make /nologo -$(MAKEFLAGS) matrixApp\CMakeFiles\matrixApp.dir\build
+.PHONY : matrixApp\fast
 
 # Help Target
 help:
@@ -139,7 +139,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Lab02-Projekt
+	@echo ... matrixApp
 	@echo ... matrixLib
 .PHONY : help
 

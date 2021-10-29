@@ -1,23 +1,42 @@
 #include <iostream>
-#include <conio.h>
-#include "matrixLib.h"
+#include <matrixLib.h>
 
 using namespace std;
+
+int ReadInt(string text){
+    cout<<text;
+    int num;
+    while(!(cin>>num)){
+        cout<<"Blad przy odczycie liczby. Wprowadz jeszcze raz: ";
+        cin.clear();
+        cin.ignore(100000, '\n');
+    }
+    return num;
+}
+double ReadDouble(string text){
+    cout<<text;
+    double num;
+    while(!(cin>>num)){
+        cout<<"Blad przy odczycie liczby. Wprowadz jeszcze raz: ";
+        cin.clear();
+        cin.ignore(100000, '\n');
+    }
+    return num;
+}
+
 
 int** EnterMatrix(string txt, int &rows, int &cols){
     int** matrix;
     cout<<txt<<endl;
     if(rows == 0){
-        cout<<"Wprowadz ilosc wierszy: ";
-        cin>>rows;
-        cout<<"Wprowadz ilosc kolumn: ";
-        cin>>cols;
+        rows = ReadInt("Wprowadz ilosc wierszy: ");
+        cols = ReadInt("Wprowadz ilosc kolumn: ");
     }
     matrix = CreateMatrix(rows, cols);
     cout<<"Wprowadzaj po kolei wartosci macierzy rzedami:\n";
     for(int y=0; y<rows; y++)
         for(int x=0; x<cols; x++){
-            cin>>matrix[y][x];
+            matrix[y][x] = ReadInt("");
         }
     return matrix;
 }
@@ -26,16 +45,14 @@ double** EnterMatrixDouble(string txt, int &rows, int &cols){
     double** matrix;
     cout<<txt<<endl;
     if(rows == 0){
-        cout<<"Wprowadz ilosc wierszy: ";
-        cin>>rows;
-        cout<<"Wprowadz ilosc kolumn: ";
-        cin>>cols;
+        rows = ReadInt("Wprowadz ilosc wierszy: ");
+        cols = ReadInt("Wprowadz ilosc kolumn: ");
     }
     matrix = CreateMatrixDouble(rows, cols);
     cout<<"Wprowadzaj po kolei wartosci macierzy rzedami:\n";
     for(int y=0; y<rows; y++)
         for(int x=0; x<cols; x++){
-            cin>>matrix[y][x];
+            matrix[y][x] = ReadDouble("");
         }
     return matrix;
 }
@@ -159,8 +176,7 @@ int main(int argc, char *argv[]) {
         if(IsInt()){
             int rows = 0, cols, scalar;
             int** matrixA = EnterMatrix("Wprowadz macierz A", rows, cols);
-            cout<<"Wprowadz skalar: ";
-            cin>>scalar;
+            scalar = ReadInt("Wprowadz skalar: ");
             int** result = multiplyByScalar(matrixA, rows, cols, scalar);
             ShowMatrix(result, rows, cols);
             DeleteMatrix(matrixA, rows);
@@ -169,8 +185,7 @@ int main(int argc, char *argv[]) {
             int rows = 0, cols;
             double scalar;
             double** matrixA = EnterMatrixDouble("Wprowadz macierz A", rows, cols);
-            cout<<"Wprowadz skalar: ";
-            cin>>scalar;
+            scalar = ReadDouble("Wprowadz skalar: ");
             double** result = multiplyByScalar(matrixA, rows, cols, scalar);
             ShowMatrix(result, rows, cols);
             DeleteMatrix(matrixA, rows);
@@ -200,8 +215,7 @@ int main(int argc, char *argv[]) {
             unsigned int power;
             int** matrixA = EnterMatrix("Wprowadz kwadratowa macierz A", rows, cols);
             if(!IsSquare(rows, cols)) { DeleteMatrix(matrixA,rows); return 0; }
-            cout<<"Wprowadz potege: ";
-            cin>>power;
+            power = ReadInt("Wprowadz potege: ");
             int** result = powerMatrix(matrixA, rows, power);
             ShowMatrix(result, rows, cols);
             DeleteMatrix(matrixA, rows);
@@ -211,8 +225,7 @@ int main(int argc, char *argv[]) {
             unsigned int power;
             double** matrixA = EnterMatrixDouble("Wprowadz kwadratowa macierz A", rows, cols);
             if(!IsSquare(rows, cols)) { DeleteMatrix(matrixA,rows); return 0; }
-            cout<<"Wprowadz potege: ";
-            cin>>power;
+            power = ReadInt("Wprowadz potege: ");
             double** result = powerMatrix(matrixA, rows, power);
             ShowMatrix(result, rows, cols);
             DeleteMatrix(matrixA, rows);
