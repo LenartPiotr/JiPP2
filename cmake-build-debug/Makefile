@@ -118,6 +118,102 @@ Lab05\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab05.dir\build
 .PHONY : Lab05\fast
 
+ConstStatic\Zad1\zad1.obj: ConstStatic\Zad1\zad1.cpp.obj
+.PHONY : ConstStatic\Zad1\zad1.obj
+
+# target to build an object file
+ConstStatic\Zad1\zad1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab05.dir\ConstStatic\Zad1\zad1.cpp.obj
+.PHONY : ConstStatic\Zad1\zad1.cpp.obj
+
+ConstStatic\Zad1\zad1.i: ConstStatic\Zad1\zad1.cpp.i
+.PHONY : ConstStatic\Zad1\zad1.i
+
+# target to preprocess a source file
+ConstStatic\Zad1\zad1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab05.dir\ConstStatic\Zad1\zad1.cpp.i
+.PHONY : ConstStatic\Zad1\zad1.cpp.i
+
+ConstStatic\Zad1\zad1.s: ConstStatic\Zad1\zad1.cpp.s
+.PHONY : ConstStatic\Zad1\zad1.s
+
+# target to generate assembly for a file
+ConstStatic\Zad1\zad1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab05.dir\ConstStatic\Zad1\zad1.cpp.s
+.PHONY : ConstStatic\Zad1\zad1.cpp.s
+
+KonstruktoryKopiujace\Zad1\src\Point.obj: KonstruktoryKopiujace\Zad1\src\Point.cpp.obj
+.PHONY : KonstruktoryKopiujace\Zad1\src\Point.obj
+
+# target to build an object file
+KonstruktoryKopiujace\Zad1\src\Point.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab05.dir\KonstruktoryKopiujace\Zad1\src\Point.cpp.obj
+.PHONY : KonstruktoryKopiujace\Zad1\src\Point.cpp.obj
+
+KonstruktoryKopiujace\Zad1\src\Point.i: KonstruktoryKopiujace\Zad1\src\Point.cpp.i
+.PHONY : KonstruktoryKopiujace\Zad1\src\Point.i
+
+# target to preprocess a source file
+KonstruktoryKopiujace\Zad1\src\Point.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab05.dir\KonstruktoryKopiujace\Zad1\src\Point.cpp.i
+.PHONY : KonstruktoryKopiujace\Zad1\src\Point.cpp.i
+
+KonstruktoryKopiujace\Zad1\src\Point.s: KonstruktoryKopiujace\Zad1\src\Point.cpp.s
+.PHONY : KonstruktoryKopiujace\Zad1\src\Point.s
+
+# target to generate assembly for a file
+KonstruktoryKopiujace\Zad1\src\Point.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab05.dir\KonstruktoryKopiujace\Zad1\src\Point.cpp.s
+.PHONY : KonstruktoryKopiujace\Zad1\src\Point.cpp.s
+
+KonstruktoryKopiujace\Zad1\src\main.obj: KonstruktoryKopiujace\Zad1\src\main.cpp.obj
+.PHONY : KonstruktoryKopiujace\Zad1\src\main.obj
+
+# target to build an object file
+KonstruktoryKopiujace\Zad1\src\main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab05.dir\KonstruktoryKopiujace\Zad1\src\main.cpp.obj
+.PHONY : KonstruktoryKopiujace\Zad1\src\main.cpp.obj
+
+KonstruktoryKopiujace\Zad1\src\main.i: KonstruktoryKopiujace\Zad1\src\main.cpp.i
+.PHONY : KonstruktoryKopiujace\Zad1\src\main.i
+
+# target to preprocess a source file
+KonstruktoryKopiujace\Zad1\src\main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab05.dir\KonstruktoryKopiujace\Zad1\src\main.cpp.i
+.PHONY : KonstruktoryKopiujace\Zad1\src\main.cpp.i
+
+KonstruktoryKopiujace\Zad1\src\main.s: KonstruktoryKopiujace\Zad1\src\main.cpp.s
+.PHONY : KonstruktoryKopiujace\Zad1\src\main.s
+
+# target to generate assembly for a file
+KonstruktoryKopiujace\Zad1\src\main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab05.dir\KonstruktoryKopiujace\Zad1\src\main.cpp.s
+.PHONY : KonstruktoryKopiujace\Zad1\src\main.cpp.s
+
+KonstruktoryKopiujace\Zad2\zad2.obj: KonstruktoryKopiujace\Zad2\zad2.cpp.obj
+.PHONY : KonstruktoryKopiujace\Zad2\zad2.obj
+
+# target to build an object file
+KonstruktoryKopiujace\Zad2\zad2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab05.dir\KonstruktoryKopiujace\Zad2\zad2.cpp.obj
+.PHONY : KonstruktoryKopiujace\Zad2\zad2.cpp.obj
+
+KonstruktoryKopiujace\Zad2\zad2.i: KonstruktoryKopiujace\Zad2\zad2.cpp.i
+.PHONY : KonstruktoryKopiujace\Zad2\zad2.i
+
+# target to preprocess a source file
+KonstruktoryKopiujace\Zad2\zad2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab05.dir\KonstruktoryKopiujace\Zad2\zad2.cpp.i
+.PHONY : KonstruktoryKopiujace\Zad2\zad2.cpp.i
+
+KonstruktoryKopiujace\Zad2\zad2.s: KonstruktoryKopiujace\Zad2\zad2.cpp.s
+.PHONY : KonstruktoryKopiujace\Zad2\zad2.s
+
+# target to generate assembly for a file
+KonstruktoryKopiujace\Zad2\zad2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab05.dir\KonstruktoryKopiujace\Zad2\zad2.cpp.s
+.PHONY : KonstruktoryKopiujace\Zad2\zad2.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -151,6 +247,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Lab05
+	@echo ... ConstStatic/Zad1/zad1.obj
+	@echo ... ConstStatic/Zad1/zad1.i
+	@echo ... ConstStatic/Zad1/zad1.s
+	@echo ... KonstruktoryKopiujace/Zad1/src/Point.obj
+	@echo ... KonstruktoryKopiujace/Zad1/src/Point.i
+	@echo ... KonstruktoryKopiujace/Zad1/src/Point.s
+	@echo ... KonstruktoryKopiujace/Zad1/src/main.obj
+	@echo ... KonstruktoryKopiujace/Zad1/src/main.i
+	@echo ... KonstruktoryKopiujace/Zad1/src/main.s
+	@echo ... KonstruktoryKopiujace/Zad2/zad2.obj
+	@echo ... KonstruktoryKopiujace/Zad2/zad2.i
+	@echo ... KonstruktoryKopiujace/Zad2/zad2.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

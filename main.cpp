@@ -1,6 +1,8 @@
-git init#include <iostream>
+#include <iostream>
+#include "konstruktory.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    //Zad1Main();
+    Zad2();
     return 0;
 }
