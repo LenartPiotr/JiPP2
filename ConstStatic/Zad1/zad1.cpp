@@ -32,5 +32,5 @@ public:
 };
 
 void ConstStaticZad1(){
-    //
+    // Dodano gettery i settery
 }

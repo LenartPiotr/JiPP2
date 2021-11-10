@@ -142,6 +142,30 @@ ConstStatic\Zad1\zad1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab05.dir\ConstStatic\Zad1\zad1.cpp.s
 .PHONY : ConstStatic\Zad1\zad1.cpp.s
 
+ConstStatic\Zad2\zad2.obj: ConstStatic\Zad2\zad2.cpp.obj
+.PHONY : ConstStatic\Zad2\zad2.obj
+
+# target to build an object file
+ConstStatic\Zad2\zad2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab05.dir\ConstStatic\Zad2\zad2.cpp.obj
+.PHONY : ConstStatic\Zad2\zad2.cpp.obj
+
+ConstStatic\Zad2\zad2.i: ConstStatic\Zad2\zad2.cpp.i
+.PHONY : ConstStatic\Zad2\zad2.i
+
+# target to preprocess a source file
+ConstStatic\Zad2\zad2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab05.dir\ConstStatic\Zad2\zad2.cpp.i
+.PHONY : ConstStatic\Zad2\zad2.cpp.i
+
+ConstStatic\Zad2\zad2.s: ConstStatic\Zad2\zad2.cpp.s
+.PHONY : ConstStatic\Zad2\zad2.s
+
+# target to generate assembly for a file
+ConstStatic\Zad2\zad2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab05.dir\ConstStatic\Zad2\zad2.cpp.s
+.PHONY : ConstStatic\Zad2\zad2.cpp.s
+
 KonstruktoryKopiujace\Zad1\src\Point.obj: KonstruktoryKopiujace\Zad1\src\Point.cpp.obj
 .PHONY : KonstruktoryKopiujace\Zad1\src\Point.obj
 
@@ -250,6 +274,9 @@ help:
 	@echo ... ConstStatic/Zad1/zad1.obj
 	@echo ... ConstStatic/Zad1/zad1.i
 	@echo ... ConstStatic/Zad1/zad1.s
+	@echo ... ConstStatic/Zad2/zad2.obj
+	@echo ... ConstStatic/Zad2/zad2.i
+	@echo ... ConstStatic/Zad2/zad2.s
 	@echo ... KonstruktoryKopiujace/Zad1/src/Point.obj
 	@echo ... KonstruktoryKopiujace/Zad1/src/Point.i
 	@echo ... KonstruktoryKopiujace/Zad1/src/Point.s

@@ -6,5 +6,6 @@
 #define LAB05_INCLUDE_H
 
 void ConstStaticZad1();
+void ConstStaticZad2();
 
 #endif //LAB05_INCLUDE_H

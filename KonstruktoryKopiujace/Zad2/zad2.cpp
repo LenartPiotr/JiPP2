@@ -8,6 +8,8 @@ class Pojazd{
     string *osoby;
     string marka;
     string typ;
+    static int najnowszaWersjaOprogramowania;
+    static int zainstalowanaWersjaOprogramowania;
 public:
     Pojazd(string nrRej,string nazwa,int iloscMiejsc,string marka,string typ)
         :nrRej(nrRej),nazwa(nazwa),iloscMiejsc(iloscMiejsc),marka(marka),typ(typ){
@@ -45,7 +47,20 @@ public:
     string getTyp(){return typ;}
     void setNazwa(string nazwa){ this->nazwa=nazwa;}
     void setNrRej(string nrRej){ this->nrRej=nrRej;}
+
+    static void printVersion(){
+        cout<<"Zainstalowana wersja oprogramowania: "<<zainstalowanaWersjaOprogramowania<<endl;
+    }
+    static void updateVersion(){
+        zainstalowanaWersjaOprogramowania = najnowszaWersjaOprogramowania;
+    }
+    static void opublikujNoweOprogramowanie(int wersja){
+        najnowszaWersjaOprogramowania = wersja;
+    }
 };
+
+int Pojazd::najnowszaWersjaOprogramowania = 5;
+int Pojazd::zainstalowanaWersjaOprogramowania = 4;
 
 void Zad2(){
     Pojazd p1("KN 12345","nazwa1",2,"marka1","typ1");
@@ -57,4 +72,13 @@ void Zad2(){
     p1.print();
     cout<<"Pojazd2\n";
     p2.print();
+    Pojazd::printVersion();
+    cout<<"Aktualizacja\n";
+    Pojazd::updateVersion();
+    Pojazd::printVersion();
+    cout<<"Nowa wersja oprogramowania\n";
+    Pojazd::opublikujNoweOprogramowanie(10);
+    cout<<"Aktualizacja\n";
+    Pojazd::updateVersion();
+    Pojazd::printVersion();
 }

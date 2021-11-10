@@ -91,6 +91,9 @@
 		<Unit filename="C:/Users/Piotr/CLionProjects/Lab05/ConstStatic/Zad1/zad1.cpp">
 			<Option target="Lab05"/>
 		</Unit>
+		<Unit filename="C:/Users/Piotr/CLionProjects/Lab05/ConstStatic/Zad2/zad2.cpp">
+			<Option target="Lab05"/>
+		</Unit>
 		<Unit filename="C:/Users/Piotr/CLionProjects/Lab05/KonstruktoryKopiujace/Zad1/src/Point.cpp">
 			<Option target="Lab05"/>
 		</Unit>
