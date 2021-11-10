@@ -27,6 +27,7 @@
 					<Add directory="C:/Users/Piotr/CLionProjects/Lab05/KonstruktoryKopiujace/Zad1/include"/>
 					<Add directory="C:/Users/Piotr/CLionProjects/Lab05/KonstruktoryKopiujace/include"/>
 					<Add directory="C:/Users/Piotr/CLionProjects/Lab05/ConstStatic/include"/>
+					<Add directory="C:/Users/Piotr/CLionProjects/Lab05/Operatory/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
@@ -52,6 +53,7 @@
 					<Add directory="C:/Users/Piotr/CLionProjects/Lab05/KonstruktoryKopiujace/Zad1/include"/>
 					<Add directory="C:/Users/Piotr/CLionProjects/Lab05/KonstruktoryKopiujace/include"/>
 					<Add directory="C:/Users/Piotr/CLionProjects/Lab05/ConstStatic/include"/>
+					<Add directory="C:/Users/Piotr/CLionProjects/Lab05/Operatory/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
@@ -101,6 +103,9 @@
 			<Option target="Lab05"/>
 		</Unit>
 		<Unit filename="C:/Users/Piotr/CLionProjects/Lab05/KonstruktoryKopiujace/Zad2/zad2.cpp">
+			<Option target="Lab05"/>
+		</Unit>
+		<Unit filename="C:/Users/Piotr/CLionProjects/Lab05/Operatory/src/vector.cpp">
 			<Option target="Lab05"/>
 		</Unit>
 		<Unit filename="C:/Users/Piotr/CLionProjects/Lab05/main.cpp">

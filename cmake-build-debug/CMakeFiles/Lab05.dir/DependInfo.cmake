@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Piotr/CLionProjects/Lab05/KonstruktoryKopiujace/Zad1/src/Point.cpp" "C:/Users/Piotr/CLionProjects/Lab05/cmake-build-debug/CMakeFiles/Lab05.dir/KonstruktoryKopiujace/Zad1/src/Point.cpp.obj"
   "C:/Users/Piotr/CLionProjects/Lab05/KonstruktoryKopiujace/Zad1/src/main.cpp" "C:/Users/Piotr/CLionProjects/Lab05/cmake-build-debug/CMakeFiles/Lab05.dir/KonstruktoryKopiujace/Zad1/src/main.cpp.obj"
   "C:/Users/Piotr/CLionProjects/Lab05/KonstruktoryKopiujace/Zad2/zad2.cpp" "C:/Users/Piotr/CLionProjects/Lab05/cmake-build-debug/CMakeFiles/Lab05.dir/KonstruktoryKopiujace/Zad2/zad2.cpp.obj"
+  "C:/Users/Piotr/CLionProjects/Lab05/Operatory/src/vector.cpp" "C:/Users/Piotr/CLionProjects/Lab05/cmake-build-debug/CMakeFiles/Lab05.dir/Operatory/src/vector.cpp.obj"
   "C:/Users/Piotr/CLionProjects/Lab05/main.cpp" "C:/Users/Piotr/CLionProjects/Lab05/cmake-build-debug/CMakeFiles/Lab05.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
@@ -22,6 +23,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../KonstruktoryKopiujace/Zad1/include"
   "../KonstruktoryKopiujace/include"
   "../ConstStatic/include"
+  "../Operatory/include"
   )
 
 # The set of dependency files which are needed:

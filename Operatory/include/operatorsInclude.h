@@ -1,0 +1,8 @@
+//
+// Created by Piotr on 10.11.2021.
+//
+
+#ifndef LAB05_OPERATORSINCLUDE_H
+#define LAB05_OPERATORSINCLUDE_H
+
+#endif //LAB05_OPERATORSINCLUDE_H

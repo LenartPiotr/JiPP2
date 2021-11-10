@@ -238,6 +238,30 @@ KonstruktoryKopiujace\Zad2\zad2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab05.dir\KonstruktoryKopiujace\Zad2\zad2.cpp.s
 .PHONY : KonstruktoryKopiujace\Zad2\zad2.cpp.s
 
+Operatory\src\vector.obj: Operatory\src\vector.cpp.obj
+.PHONY : Operatory\src\vector.obj
+
+# target to build an object file
+Operatory\src\vector.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab05.dir\Operatory\src\vector.cpp.obj
+.PHONY : Operatory\src\vector.cpp.obj
+
+Operatory\src\vector.i: Operatory\src\vector.cpp.i
+.PHONY : Operatory\src\vector.i
+
+# target to preprocess a source file
+Operatory\src\vector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab05.dir\Operatory\src\vector.cpp.i
+.PHONY : Operatory\src\vector.cpp.i
+
+Operatory\src\vector.s: Operatory\src\vector.cpp.s
+.PHONY : Operatory\src\vector.s
+
+# target to generate assembly for a file
+Operatory\src\vector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab05.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab05.dir\Operatory\src\vector.cpp.s
+.PHONY : Operatory\src\vector.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -286,6 +310,9 @@ help:
 	@echo ... KonstruktoryKopiujace/Zad2/zad2.obj
 	@echo ... KonstruktoryKopiujace/Zad2/zad2.i
 	@echo ... KonstruktoryKopiujace/Zad2/zad2.s
+	@echo ... Operatory/src/vector.obj
+	@echo ... Operatory/src/vector.i
+	@echo ... Operatory/src/vector.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
