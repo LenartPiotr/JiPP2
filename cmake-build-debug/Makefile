@@ -118,29 +118,125 @@ Lab06\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab06.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab06.dir\build
 .PHONY : Lab06\fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+src\ImaginaryNumber.obj: src\ImaginaryNumber.cpp.obj
+.PHONY : src\ImaginaryNumber.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab06.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab06.dir\main.cpp.obj
-.PHONY : main.cpp.obj
+src\ImaginaryNumber.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab06.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab06.dir\src\ImaginaryNumber.cpp.obj
+.PHONY : src\ImaginaryNumber.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+src\ImaginaryNumber.i: src\ImaginaryNumber.cpp.i
+.PHONY : src\ImaginaryNumber.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab06.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab06.dir\main.cpp.i
-.PHONY : main.cpp.i
+src\ImaginaryNumber.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab06.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab06.dir\src\ImaginaryNumber.cpp.i
+.PHONY : src\ImaginaryNumber.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src\ImaginaryNumber.s: src\ImaginaryNumber.cpp.s
+.PHONY : src\ImaginaryNumber.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab06.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab06.dir\main.cpp.s
-.PHONY : main.cpp.s
+src\ImaginaryNumber.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab06.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab06.dir\src\ImaginaryNumber.cpp.s
+.PHONY : src\ImaginaryNumber.cpp.s
+
+src\main.obj: src\main.cpp.obj
+.PHONY : src\main.obj
+
+# target to build an object file
+src\main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab06.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab06.dir\src\main.cpp.obj
+.PHONY : src\main.cpp.obj
+
+src\main.i: src\main.cpp.i
+.PHONY : src\main.i
+
+# target to preprocess a source file
+src\main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab06.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab06.dir\src\main.cpp.i
+.PHONY : src\main.cpp.i
+
+src\main.s: src\main.cpp.s
+.PHONY : src\main.s
+
+# target to generate assembly for a file
+src\main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab06.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab06.dir\src\main.cpp.s
+.PHONY : src\main.cpp.s
+
+src\node.obj: src\node.cpp.obj
+.PHONY : src\node.obj
+
+# target to build an object file
+src\node.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab06.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab06.dir\src\node.cpp.obj
+.PHONY : src\node.cpp.obj
+
+src\node.i: src\node.cpp.i
+.PHONY : src\node.i
+
+# target to preprocess a source file
+src\node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab06.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab06.dir\src\node.cpp.i
+.PHONY : src\node.cpp.i
+
+src\node.s: src\node.cpp.s
+.PHONY : src\node.s
+
+# target to generate assembly for a file
+src\node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab06.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab06.dir\src\node.cpp.s
+.PHONY : src\node.cpp.s
+
+src\triangle.obj: src\triangle.cpp.obj
+.PHONY : src\triangle.obj
+
+# target to build an object file
+src\triangle.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab06.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab06.dir\src\triangle.cpp.obj
+.PHONY : src\triangle.cpp.obj
+
+src\triangle.i: src\triangle.cpp.i
+.PHONY : src\triangle.i
+
+# target to preprocess a source file
+src\triangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab06.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab06.dir\src\triangle.cpp.i
+.PHONY : src\triangle.cpp.i
+
+src\triangle.s: src\triangle.cpp.s
+.PHONY : src\triangle.s
+
+# target to generate assembly for a file
+src\triangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab06.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab06.dir\src\triangle.cpp.s
+.PHONY : src\triangle.cpp.s
+
+src\vector.obj: src\vector.cpp.obj
+.PHONY : src\vector.obj
+
+# target to build an object file
+src\vector.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab06.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab06.dir\src\vector.cpp.obj
+.PHONY : src\vector.cpp.obj
+
+src\vector.i: src\vector.cpp.i
+.PHONY : src\vector.i
+
+# target to preprocess a source file
+src\vector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab06.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab06.dir\src\vector.cpp.i
+.PHONY : src\vector.cpp.i
+
+src\vector.s: src\vector.cpp.s
+.PHONY : src\vector.s
+
+# target to generate assembly for a file
+src\vector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab06.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Lab06.dir\src\vector.cpp.s
+.PHONY : src\vector.cpp.s
 
 # Help Target
 help:
@@ -151,9 +247,21 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Lab06
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... src/ImaginaryNumber.obj
+	@echo ... src/ImaginaryNumber.i
+	@echo ... src/ImaginaryNumber.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
+	@echo ... src/node.obj
+	@echo ... src/node.i
+	@echo ... src/node.s
+	@echo ... src/triangle.obj
+	@echo ... src/triangle.i
+	@echo ... src/triangle.s
+	@echo ... src/vector.obj
+	@echo ... src/vector.i
+	@echo ... src/vector.s
 .PHONY : help
 
 

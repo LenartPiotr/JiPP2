@@ -3,4 +3,6 @@ project(Lab06)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Lab06 main.cpp)
+include_directories(include)
+
+add_executable(Lab06 src/main.cpp include/node.h src/node.cpp src/vector.cpp src/ImaginaryNumber.cpp include/triangle.h src/triangle.cpp)
