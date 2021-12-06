@@ -4,3 +4,4 @@ project(Lab09)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(Lab09 main.cpp)
+add_subdirectory(StopExample)
