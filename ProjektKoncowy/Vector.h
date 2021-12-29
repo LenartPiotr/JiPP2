@@ -23,10 +23,13 @@ public:
 	Vector add(double, double) const;
 	void reverseX();
 	void reverseY();
-	Vector operator+(const Vector&);
+	Vector operator+(const Vector&) const;
 	Vector operator*(double);
+	double operator*(const Vector&);
 	Vector operator-();
-	Vector operator-(const Vector&);
+	Vector operator-(const Vector&) const;
 
+	// Rzut punktu v3 na prost¹ v1 v2
+	static Vector projection(const Vector& v1, const Vector& v2, const Vector& v3);
 	static Angle getAngleFromPoints(const Vector&, const Vector&);
 };

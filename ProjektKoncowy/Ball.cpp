@@ -11,11 +11,14 @@ Ball::Ball(int* widthArea, int* heightArea, double speed)
 	position = Vector(random->NextDouble() * (*widthArea), random->NextDouble() * (*heightArea));
 	velocity = Vector(Angle(random->NextDouble() * Math::PI * 2), speed);
 	radius = 5;
+	countCollisionTicksInARow = 0;
+	ignoreCollisionTicks = 0;
 }
 
 Ball::Ball(int* widthArea, int* heightArea, double speed, Vector position, Vector velocity, double radius)
 	:Drawable(widthArea, heightArea),
-	position(position), velocity(velocity), radius(radius) {}
+	position(position), velocity(velocity), radius(radius),
+	countCollisionTicksInARow(0), ignoreCollisionTicks(0) {}
 
 void Ball::Draw(BufferedGraphics^ buffer, Pen^ pen)
 {
@@ -82,4 +85,21 @@ void Ball::Reflection(Ball& b1, Ball& b2)
 	resultVecB = (resultVecB + forceToB).normalize() * newForceB;
 	b1.velocity = resultVecA;
 	b2.velocity = resultVecB;
+}
+
+void Ball::Reflection2(Ball& b1, Ball& b2)
+{
+	// Wyznaczamy punkty rzutów si³ na prost¹ zawieraj¹c¹ œrodki obiektów
+	Vector p1 = Vector::projection(b1.position, b2.position, b1.position + b1.velocity);
+	Vector p2 = Vector::projection(b1.position, b2.position, b2.position + b2.velocity);
+	// Rozk³adamy wektory prêdkoœci na wektory sk³adowe o i q
+	Vector o1 = p1 - b1.position;
+	Vector o2 = p2 - b2.position;
+	Vector q1 = b1.velocity - o1;
+	Vector q2 = b2.velocity - o2;
+	// Wyznaczamy wektory wynikowe
+	Vector r1 = o2 + q1;
+	Vector r2 = o1 + q2;
+	b1.velocity = r1;
+	b2.velocity = r2;
 }

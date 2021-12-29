@@ -72,7 +72,7 @@ void Vector::reverseY()
 	y *= -1;
 }
 
-Vector Vector::operator+(const Vector& rhs)
+Vector Vector::operator+(const Vector& rhs) const
 {
 	return Vector(x + rhs.x, y + rhs.y);
 }
@@ -82,14 +82,25 @@ Vector Vector::operator*(double value)
 	return Vector(x * value, y * value);
 }
 
+double Vector::operator*(const Vector& rhs)
+{
+	return x * rhs.x + y * rhs.y;
+}
+
 Vector Vector::operator-()
 {
 	return Vector(-x, -y);
 }
 
-Vector Vector::operator-(const Vector& rhs)
+Vector Vector::operator-(const Vector& rhs) const
 {
 	return Vector(x - rhs.x, y - rhs.y);
+}
+
+Vector Vector::projection(const Vector& v1, const Vector& v2, const Vector& v3)
+{
+	double u = ((v3 - v1) * (v2 - v1)) / ((v1 - v2) * (v1 - v2));
+	return v1 + (v2 - v1) * u;
 }
 
 Angle Vector::getAngleFromPoints(const Vector& p1, const Vector& p2)
