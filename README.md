@@ -13,4 +13,4 @@
 | [Lab08](https://github.com/LenartPiotr/JiPP2/tree/Lab08) | 29.11 |
 | [Lab09](https://github.com/LenartPiotr/JiPP2/tree/Lab09) | 06.12 |
 | [Lab10](https://github.com/LenartPiotr/JiPP2/tree/Lab10) | 22.12 |
-| [Lab10.1](https://github.com/LenartPiotr/JiPP2/tree/Lab10_1) | 03.01 |
+| [Lab10.1](https://github.com/LenartPiotr/JiPP2/tree/10_1) | 03.01 |
