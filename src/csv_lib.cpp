@@ -1,4 +1,7 @@
+#include <iostream>
 #include "csv_lib.h"
+
+using namespace std;
 
 CSVData::CSVData() {
     maxCols = 0;
@@ -38,5 +41,15 @@ int CSVData::rows() const {
 
 int CSVData::cols() const {
     return maxCols;
+}
+
+void CSVData::print() const {
+    for(int i=0; i<data.size(); i++){
+        for(int j=0; j<data[i].size(); j++){
+            if(j!=0) cout<<"\t";
+            cout<<data[i][j];
+        }
+        cout<<"\n";
+    }
 }
 

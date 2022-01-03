@@ -17,6 +17,7 @@ public:
     string getData(int row,int col) const;
     int rows() const;
     int cols() const;
+    void print() const;
 };
 
 class CSVReader{

@@ -5,6 +5,14 @@
 using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    CSVData data;
+    CSVReader reader;
+    try{
+        data = reader.read("data.csv");
+        data.print();
+        cout<<"\nRows: "<<data.rows()<<"\nCols: "<<data.cols()<<"\n";
+    }catch (CSVException exception){
+        cout<<"ERROR: "<<exception.what();
+    }
     return 0;
 }
