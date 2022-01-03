@@ -1,9 +1,10 @@
-#ifndef INC_10_1_CSV_LIB_H
-#define INC_10_1_CSV_LIB_H
-
 #include <vector>
+#include <string>
 
 using namespace std;
+
+#ifndef INC_10_1_CSV_LIB_H
+#define INC_10_1_CSV_LIB_H
 
 class CSVData{
 private:
