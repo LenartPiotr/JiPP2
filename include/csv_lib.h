@@ -22,15 +22,15 @@ public:
 
 class CSVReader{
 public:
-    CSVData read(char* fileName);
+    CSVData read(string fileName);
 };
 
 class CSVException: public exception {
 private:
-    char *exceptionText;
+    string exceptionText;
 public:
-    CSVException(char * exceptionText): exceptionText(exceptionText) {}
-    const char * what() {
+    CSVException(string exceptionText): exceptionText(exceptionText) {}
+    const string what() {
         return exceptionText;
     }
 };

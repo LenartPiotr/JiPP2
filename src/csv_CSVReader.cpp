@@ -5,7 +5,7 @@
 #include <regex>
 #include <string>
 
-CSVData CSVReader::read(char *fileName) {
+CSVData CSVReader::read(string fileName) {
     CSVData data;
     ifstream file(fileName);
     if (file.bad())
