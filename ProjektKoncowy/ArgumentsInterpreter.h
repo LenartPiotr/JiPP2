@@ -1,6 +1,11 @@
+/*
+* Klasa interpretuj¹ca parametry programu
+* Zwraca obiekt klasy ArgumentValues
+* Mo¿e zwróciæ wyj¹tki System::Exception
+*/
+
 #pragma once
 #include "pch.h"
-#include <vector>
 #include "ArgumentValues.h"
 
 using namespace System;

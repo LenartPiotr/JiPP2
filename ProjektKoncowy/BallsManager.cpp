@@ -16,7 +16,6 @@ BallsManager::BallsManager(const RunSettings& settings)
 	int posY = radius * 2;
 	for (int i = 0; i < ballsCount; i++) {
 		balls[i] = new Ball(&widthArea, &heightArea, settings.getSpeed(),
-			//Vector(random->NextDouble() * (widthArea),random->NextDouble() * (heightArea)),
 			Vector(posX, posY),
 			Vector(Angle(random->NextDouble() * Math::PI * 2), settings.getSpeed()),
 			radius);
@@ -57,7 +56,7 @@ void BallsManager::move()
 		for (int j = i + 1; j < ballsCount; j++) {
 			if (balls[i]->ignoreCollisionTicks == 0 && balls[j]->ignoreCollisionTicks == 0)
 			if (balls[i]->Distance(*balls[j]) < balls[i]->getRadius() + balls[j]->getRadius()) {
-				Ball::Reflection2(*balls[i], *balls[j]);
+				Ball::reflection2(*balls[i], *balls[j]);
 				collisionChecked[i] = true;
 				collisionChecked[j] = true;
 			}

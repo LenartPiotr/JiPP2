@@ -1,3 +1,7 @@
+/*
+* Klasa range opisuje zakres (najczeœciej liczb)
+*/
+
 #pragma once
 template <typename T>
 class Range

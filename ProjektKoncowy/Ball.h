@@ -1,3 +1,7 @@
+/*
+* Klasa ball opisuje obiekty, które bêd¹ wyœwietlane w aplikacji
+*/
+
 #pragma once
 #include "Drawable.h"
 #include "Vector.h"
@@ -19,7 +23,12 @@ public:
 	void Move();
 	double getRadius();
 
-	static void Reflection(Ball& b1, Ball& b2);	// Metoda wyznaczania kierunku i si³
-	static void Reflection2(Ball& b1, Ball& b2); // Metoda rozbijania wektora na wektory sk³adowe
+	/*
+	* Statyczne metody reflection obliczaj¹ zderzenia dwóch kul
+	* Druga metoda jest bardziej dok³adna
+	*/
+
+	static void reflection(Ball& b1, Ball& b2);	// Metoda wyznaczania kierunku i si³
+	static void reflection2(Ball& b1, Ball& b2); // Metoda rozbijania wektora na wektory sk³adowe
 };
 

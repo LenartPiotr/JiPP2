@@ -1,3 +1,7 @@
+/*
+* Klasa wirtualna Drawable opisuje obiekty, które bêd¹ rysowane w buforze graficznym
+*/
+
 #pragma once
 
 using namespace System::Drawing;

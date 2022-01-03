@@ -25,7 +25,7 @@ int ArgumentValues::getHeight()
 	return height;
 }
 
-int ArgumentValues::getRunApp()
+bool ArgumentValues::getRunApp()
 {
 	return runApp;
 }

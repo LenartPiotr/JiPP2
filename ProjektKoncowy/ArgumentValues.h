@@ -1,3 +1,7 @@
+/*
+* Klasa przechowuj¹ca parametry wywo³ania procesu jako zmienne
+*/
+
 #pragma once
 class ArgumentValues
 {
@@ -14,7 +18,7 @@ public:
 	double getSpeed();
 	int getWidth();
 	int getHeight();
-	int getRunApp();
+	bool getRunApp();
 	void setCount(int);
 	void setSpeed(double);
 	void setWidth(int);

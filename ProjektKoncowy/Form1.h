@@ -1,4 +1,5 @@
 #pragma once
+#include "IOException.h"
 #include "RunSettings.h"
 
 namespace CppCLRWinformsProjekt {
@@ -53,7 +54,8 @@ namespace CppCLRWinformsProjekt {
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Label^ label5;
 	private: System::Windows::Forms::Button^ buttonRun;
-
+	private: System::Windows::Forms::Button^ saveButton;
+	private: System::Windows::Forms::Button^ readButton;
 	private: System::ComponentModel::IContainer^ components;
 	protected:
 
@@ -76,6 +78,8 @@ namespace CppCLRWinformsProjekt {
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->buttonRun = (gcnew System::Windows::Forms::Button());
+			this->saveButton = (gcnew System::Windows::Forms::Button());
+			this->readButton = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->inputCount))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->inputSpeed))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->inputWidth))->BeginInit();
@@ -190,7 +194,7 @@ namespace CppCLRWinformsProjekt {
 			// 
 			this->buttonRun->Font = (gcnew System::Drawing::Font(L"Segoe UI", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
-			this->buttonRun->Location = System::Drawing::Point(12, 147);
+			this->buttonRun->Location = System::Drawing::Point(12, 176);
 			this->buttonRun->Name = L"buttonRun";
 			this->buttonRun->Size = System::Drawing::Size(158, 23);
 			this->buttonRun->TabIndex = 9;
@@ -198,12 +202,38 @@ namespace CppCLRWinformsProjekt {
 			this->buttonRun->UseVisualStyleBackColor = true;
 			this->buttonRun->Click += gcnew System::EventHandler(this, &Form1::buttonRun_Click);
 			// 
+			// saveButton
+			// 
+			this->saveButton->Font = (gcnew System::Drawing::Font(L"Segoe UI", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->saveButton->Location = System::Drawing::Point(12, 147);
+			this->saveButton->Name = L"saveButton";
+			this->saveButton->Size = System::Drawing::Size(75, 23);
+			this->saveButton->TabIndex = 10;
+			this->saveButton->Text = L"Zapisz";
+			this->saveButton->UseVisualStyleBackColor = true;
+			this->saveButton->Click += gcnew System::EventHandler(this, &Form1::saveButton_Click);
+			// 
+			// readButton
+			// 
+			this->readButton->Font = (gcnew System::Drawing::Font(L"Segoe UI", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->readButton->Location = System::Drawing::Point(95, 147);
+			this->readButton->Name = L"readButton";
+			this->readButton->Size = System::Drawing::Size(75, 23);
+			this->readButton->TabIndex = 11;
+			this->readButton->Text = L"Wczytaj";
+			this->readButton->UseVisualStyleBackColor = true;
+			this->readButton->Click += gcnew System::EventHandler(this, &Form1::readButton_Click);
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::Control;
-			this->ClientSize = System::Drawing::Size(182, 179);
+			this->ClientSize = System::Drawing::Size(182, 210);
+			this->Controls->Add(this->readButton);
+			this->Controls->Add(this->saveButton);
 			this->Controls->Add(this->buttonRun);
 			this->Controls->Add(this->label5);
 			this->Controls->Add(this->label4);
@@ -228,11 +258,54 @@ namespace CppCLRWinformsProjekt {
 
 		}
 		#pragma endregion
-		private: System::Void buttonRun_Click(System::Object^ sender, System::EventArgs^ e) {
+	private:
+		System::Void buttonRun_Click(System::Object^ sender, System::EventArgs^ e) {
 			*closeFormByButton = true;
 			Close();
 		}
-		private: System::Void Form1_FormClosed(System::Object^ sender, System::Windows::Forms::FormClosedEventArgs^ e) {
+		System::Void Form1_FormClosed(System::Object^ sender, System::Windows::Forms::FormClosedEventArgs^ e) {
+			saveToSettings();
+		}
+		System::Void saveButton_Click(System::Object^ sender, System::EventArgs^ e) {
+			saveToSettings();
+			SaveFileDialog dialog;
+			dialog.Filter = "bin files (*.bin)|*.bin|All files (*.*)|*.*";
+			dialog.RestoreDirectory = true;
+			if (dialog.ShowDialog() == System::Windows::Forms::DialogResult::OK) {
+				String^ filename = dialog.FileName;
+				char* buffer = new char[filename->Length + 2];
+				sprintf(buffer, "%s", filename);
+				try {
+					settings->save(buffer);
+				}
+				catch (IOException exception){
+					MessageBox::Show(gcnew String(exception.what()), "IOException");
+				}
+				delete[] buffer;
+			}
+		}
+		System::Void readButton_Click(System::Object^ sender, System::EventArgs^ e) {
+			OpenFileDialog dialog;
+			dialog.Filter = "bin files (*.bin)|*.bin|All files (*.*)|*.*";
+			dialog.RestoreDirectory = true;
+			if (dialog.ShowDialog() == System::Windows::Forms::DialogResult::OK) {
+				String^ filename = dialog.FileName;
+				char* buffer = new char[filename->Length + 2];
+				sprintf(buffer, "%s", filename);
+				try {
+					settings->read(buffer);
+					inputCount->Value = settings->getCount();
+					inputSpeed->Value = Decimal(settings->getSpeed());
+					inputWidth->Value = settings->getWidth();
+					inputHeight->Value = settings->getHeight();
+				}
+				catch (IOException exception) {
+					MessageBox::Show(gcnew String(exception.what()), "IOException");
+				}
+				delete[] buffer;
+			}
+		}
+		void saveToSettings() {
 			settings->setCount(RunSettings::countRange.getTheClosestValue(Decimal::ToInt32(inputCount->Value)));
 			settings->setSpeed(RunSettings::speedRange.getTheClosestValue(Decimal::ToDouble(inputSpeed->Value)));
 			settings->setWidth(RunSettings::widthRange.getTheClosestValue(Decimal::ToInt32(inputWidth->Value)));

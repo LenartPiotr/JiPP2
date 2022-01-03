@@ -1,6 +1,9 @@
 #include "pch.h"
 #include "RunSettings.h"
 #include "Range.h"
+#include "IOException.h"
+
+using namespace std;
 
 RunSettings::RunSettings(ArgumentValues values) :count(values.getCount()), speed(values.getSpeed()), width(values.getWidth()), height(values.getHeight()) {}
 
@@ -45,6 +48,44 @@ void RunSettings::setWidth(int value)
 void RunSettings::setHeight(int value)
 {
 	height = value;
+}
+
+void RunSettings::save(char* filename)
+{
+	ofstream file(filename);
+	if (file.fail()) throw IOException("B³¹d otwierania pliku");
+	try {
+		std::vector<IOBinaryData> dataToWrite;
+		dataToWrite.emplace_back(reinterpret_cast<char*>(&count), sizeof(count));
+		dataToWrite.emplace_back(reinterpret_cast<char*>(&speed), sizeof(speed));
+		dataToWrite.emplace_back(reinterpret_cast<char*>(&width), sizeof(width));
+		dataToWrite.emplace_back(reinterpret_cast<char*>(&height), sizeof(height));
+		IOBinaryManager::write(dataToWrite, file);
+	}
+	catch (...) {
+		file.close();
+		throw IOException("B³¹d zapisu danych");
+	}
+	file.close();
+}
+
+void RunSettings::read(char* filename)
+{
+	ifstream file(filename);
+	if (file.fail()) throw IOException("B³¹d otwierania pliku");
+	try {
+		std::vector<IOBinaryData> dataToRead;
+		dataToRead.emplace_back(reinterpret_cast<char*>(&count), sizeof(count));
+		dataToRead.emplace_back(reinterpret_cast<char*>(&speed), sizeof(speed));
+		dataToRead.emplace_back(reinterpret_cast<char*>(&width), sizeof(width));
+		dataToRead.emplace_back(reinterpret_cast<char*>(&height), sizeof(height));
+		IOBinaryManager::read(dataToRead, file);
+	}
+	catch (...){
+		file.close();
+		throw IOException("B³¹d odczytu danych");
+	}
+	file.close();
 }
 
 const Range<int> RunSettings::countRange = Range<int>(10, 1000);

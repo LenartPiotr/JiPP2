@@ -1,3 +1,8 @@
+/*
+* Klasa opisuj¹ca k¹t
+* S³u¿y do obliczeñ matematycznych
+*/
+
 #pragma once
 
 class Angle

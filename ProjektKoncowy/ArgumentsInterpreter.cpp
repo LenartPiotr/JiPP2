@@ -16,11 +16,10 @@ ArgumentValues ArgumentsInterpreter::GetValues()
 			if (i + 1 >= count) throw gcnew Exception("Brak wartoœci dla parametru " + arg);
 			try {
 				value = int::Parse(arguments[++i]);
-				if (RunSettings::countRange.isInRange(value)) throw gcnew Exception("Invalid value");
+				if (!RunSettings::countRange.isInRange(value)) throw gcnew Exception("Invalid value");
 				values.setCount(value);
 			}
 			catch (System::Exception^ ex) {
-				//throw new std::exception("B³êdna wartoœæ parametru count");
 				throw gcnew Exception("B³êdna wartoœæ parametru " + arg);
 			}
 		} else
@@ -28,11 +27,10 @@ ArgumentValues ArgumentsInterpreter::GetValues()
 			if (i + 1 >= count) throw gcnew Exception("Brak wartoœci dla parametru " + arg);
 			try {
 				dvalue = double::Parse(arguments[++i]);
-				if (RunSettings::speedRange.isInRange(dvalue)) throw gcnew Exception("Invalid value");
+				if (!RunSettings::speedRange.isInRange(dvalue)) throw gcnew Exception("Invalid value");
 				values.setSpeed(dvalue);
 			}
 			catch (System::Exception^ ex) {
-				//throw new std::exception("B³êdna wartoœæ parametru speed");
 				throw gcnew Exception("B³êdna wartoœæ parametru " + arg);
 			}
 		} else
@@ -40,11 +38,10 @@ ArgumentValues ArgumentsInterpreter::GetValues()
 			if (i + 1 >= count) throw gcnew Exception("Brak wartoœci dla parametru " + arg);
 			try {
 				value = int::Parse(arguments[++i]);
-				if (RunSettings::widthRange.isInRange(value)) throw gcnew Exception("Invalid value");
+				if (!RunSettings::widthRange.isInRange(value)) throw gcnew Exception("Invalid value");
 				values.setWidth(value);
 			}
 			catch (System::Exception^ ex) {
-				//throw new std::exception("B³êdna wartoœæ parametru width");
 				throw gcnew Exception("B³êdna wartoœæ parametru " + arg);
 			}
 		} else
@@ -52,11 +49,10 @@ ArgumentValues ArgumentsInterpreter::GetValues()
 			if (i + 1 >= count) throw gcnew Exception("Brak wartoœci dla parametru " + arg);
 			try {
 				value = int::Parse(arguments[++i]);
-				if (RunSettings::heightRange.isInRange(value)) throw gcnew Exception("Invalid value");
+				if (!RunSettings::heightRange.isInRange(value)) throw gcnew Exception("Invalid value");
 				values.setHeight(value);
 			}
 			catch (System::Exception^ ex) {
-				//throw new std::exception("B³êdna wartoœæ parametru height");
 				throw gcnew Exception("B³êdna wartoœæ parametru " + arg);
 			}
 		} else
@@ -64,7 +60,6 @@ ArgumentValues ArgumentsInterpreter::GetValues()
 			values.setRunApp(true);
 		}
 		else {
-			//throw new std::exception("Nieznany argument");
 			throw gcnew Exception("Nieznany argument " + arg);
 		}
 	}

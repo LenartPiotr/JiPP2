@@ -1,3 +1,8 @@
+/*
+* Klasa Vector przedstawia matematyczny wektor.
+* S³u¿y do operacji matematycznych.
+*/
+
 #pragma once
 #include "Angle.h"
 

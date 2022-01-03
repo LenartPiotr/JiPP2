@@ -22,7 +22,6 @@ Ball::Ball(int* widthArea, int* heightArea, double speed, Vector position, Vecto
 
 void Ball::Draw(BufferedGraphics^ buffer, Pen^ pen)
 {
-	// buffer->Graphics->DrawEllipse(pen, (float)(position.getX() - size / 2), (float)(position.getY() - size / 2), (float)size, (float)size);
 	buffer->Graphics->DrawEllipse(pen, (float)(position.getX() - radius), (float)(position.getY() - radius), (float)radius * 2,  (float)radius * 2);
 }
 
@@ -45,7 +44,7 @@ double Ball::getRadius()
 	return radius;
 }
 
-void Ball::Reflection(Ball& b1, Ball& b2)
+void Ball::reflection(Ball& b1, Ball& b2)
 {
 	// Wyznaczamy si³ê uderzeniow¹ wektora
 	double forceA = b1.velocity.length();
@@ -87,7 +86,7 @@ void Ball::Reflection(Ball& b1, Ball& b2)
 	b2.velocity = resultVecB;
 }
 
-void Ball::Reflection2(Ball& b1, Ball& b2)
+void Ball::reflection2(Ball& b1, Ball& b2)
 {
 	// Wyznaczamy punkty rzutów si³ na prost¹ zawieraj¹c¹ œrodki obiektów
 	Vector p1 = Vector::projection(b1.position, b2.position, b1.position + b1.velocity);
