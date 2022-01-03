@@ -13,10 +13,10 @@ private:
 public:
     CSVData();
     void addRow();
-    void addData(int row,string data);
-    string getData(int row,int col);
-    int rows();
-    int cols();
+    void addData(int row,const string& dataMsg);
+    string getData(int row,int col) const;
+    int rows() const;
+    int cols() const;
 };
 
 class CSVReader{
