@@ -24,4 +24,14 @@ public:
     CSVData read(char* fileName);
 };
 
+class CSVException: public exception {
+private:
+    char *exceptionText;
+public:
+    CSVException(char * exceptionText): exceptionText(exceptionText) {}
+    const char * what() {
+        return exceptionText;
+    }
+};
+
 #endif //INC_10_1_CSV_LIB_H
