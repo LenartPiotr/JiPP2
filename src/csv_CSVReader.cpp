@@ -11,7 +11,8 @@ CSVData CSVReader::read(char *fileName) {
     char sign;
     if(file.is_open()){
         while(!file.eof()){
-            file>>sign;
+            file.get(sign);
+            if(file.eof()) break;
             if(sign == ','){
                 buffer[index] = '\0';
                 string s(buffer);
@@ -24,10 +25,13 @@ CSVData CSVReader::read(char *fileName) {
                 data.addData(currentRow, s);
                 data.addRow();
                 currentRow++;
-            } else{
+            }else{
                 buffer[index++] = sign;
             }
         }
+        buffer[index] = '\0';
+        string s(buffer);
+        data.addData(currentRow, s);
     }else throw CSVException("Cannot open file");
     return data;
 }
