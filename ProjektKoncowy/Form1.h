@@ -294,10 +294,19 @@ namespace CppCLRWinformsProjekt {
 				sprintf(buffer, "%s", filename);
 				try {
 					settings->read(buffer);
-					inputCount->Value = settings->getCount();
-					inputSpeed->Value = Decimal(settings->getSpeed());
-					inputWidth->Value = settings->getWidth();
-					inputHeight->Value = settings->getHeight();
+					if (RunSettings::countRange.isInRange(settings->getCount()) &&
+						RunSettings::speedRange.isInRange(settings->getSpeed()) &&
+						RunSettings::widthRange.isInRange(settings->getWidth()) &&
+						RunSettings::heightRange.isInRange(settings->getHeight())) {
+						inputCount->Value = settings->getCount();
+						inputSpeed->Value = Decimal(settings->getSpeed());
+						inputWidth->Value = settings->getWidth();
+						inputHeight->Value = settings->getHeight();
+					}
+					else {
+						saveToSettings();
+						throw IOException("B³¹d wczytywania - nieprawid³owy plik");
+					}
 				}
 				catch (IOException exception) {
 					MessageBox::Show(gcnew String(exception.what()), "IOException");
