@@ -46,6 +46,21 @@ public:
     }
 };
 
+template <typename T> class uniq_ptr {
+private:
+    T *ptr;
+public:
+    uniq_ptr<T>(T *p) : ptr(p) {}
+    void operator=(T *p) {
+        if (ptr != NULL) {
+            delete ptr;
+        }
+        ptr = p;
+    }
+    T *operator*() { return this->ptr; }
+    ~uniq_ptr() { delete this->ptr; }
+};
+
 int main() {
     int a = 10;
     float b = 10.5;
