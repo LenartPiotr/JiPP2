@@ -15,3 +15,4 @@
 | [Lab10](https://github.com/LenartPiotr/JiPP2/tree/Lab10) | 22.12.2021 |
 | [Lab10.1](https://github.com/LenartPiotr/JiPP2/tree/10_1) | 03.01.2022 |
 | [Projekt końcowy](https://github.com/LenartPiotr/JiPP2/tree/ProjektKoncowy) | 05.01.2022 |
+| [Lab11](https://github.com/LenartPiotr/JiPP2/tree/Lab11) | 10.01.2022 |
