@@ -3,6 +3,7 @@
 #include <chrono>
 #include <random>
 #include <iomanip>
+#include <mutex>
 
 using namespace std;
 
@@ -11,12 +12,15 @@ private:
     vector<vector<double>> matrix;
 
     double max;
+    mutex criticalSection;
 
     void findMaxInRow(size_t row) {
         for(auto &cell: matrix[row]) {
+            criticalSection.lock();
             if(cell > max) {
                 max = cell;
             }
+            criticalSection.unlock();
         }
     }
 

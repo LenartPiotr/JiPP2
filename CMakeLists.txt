@@ -3,4 +3,4 @@ project(Lab12)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Lab12 main.cpp)
+add_executable(Lab12 main.cpp MatrixTest/src/main.cpp MatrixTest/src/TimeMeasure.cpp)
